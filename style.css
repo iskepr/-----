@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "IBM";
+  src: url("assets/font/IBM.ttf");
+}
+
+body {
+  color: #dbe2d6;
+  font-family: "IBM";
+  background-color: #047050;
+  background-image: url(assets/imgs/back.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+a {
+  text-decoration: none;
+  color: #dbe2d6;
+}
+span {
+  color: #047050;
+}
+.power {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  background-color: #ffffff11;
+  border-left: solid 1px #047050;
+  border-bottom: solid 1px #047050;
+}
+header {
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+  border-radius: 30px;
+  backdrop-filter: blur(3px);
+  background-color: #ffffff11;
+  border-left: solid 1px #047050;
+  border-bottom: solid 1px #047050;
+}
+header:hover,
+header:hover a {
+  color: #047050;
+  backdrop-filter: blur(30px);
+}
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.games .game:hover {
+  transform: scale(0.97);
+  transition: 0.5s;
+}
+.games .game a {
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  height: 100px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  backdrop-filter: blur(3px);
+  background-color: #ffffff11;
+  border-left: solid 1px #047050;
+  border-bottom: solid 1px #047050;
+}
+.games .game img {
+  height: 100px;
+  border-radius: 16px;
+  margin-left: 20px;
+}
+.games .game .left h1 {
+  font-size: 20px;
+  margin-bottom: 0px;
+
+  text-shadow: #047050 -1px 1px;
+}
+.games .game .left p {
+  font-size: 15px;
+  margin-top: 0px;
+  text-shadow: #047050 -1px 1px;
+}
+@media (max-width: 753px) {
+  .games {
+    display: block;
+  }
+  .games .game a,
+  .games .game {
+    width: 95%;
+  }
+}
